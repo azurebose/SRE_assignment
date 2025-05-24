@@ -8,7 +8,7 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   source:
-    repoURL: 'https://github.com/YOUR_USERNAME/metrics-app'
+    repoURL: https://github.com/azurebose/SRE_assignment.git
     targetRevision: HEAD
     path: charts/metrics-app
     helm:
