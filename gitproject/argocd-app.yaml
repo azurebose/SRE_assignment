@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-repo/metrics-app'
+    repoURL: 'https://github.com/azurebose/SRE_assignment.git
     targetRevision: main
     path: charts/metrics-app
   destination:
