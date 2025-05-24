@@ -1,0 +1,29 @@
+
+env:
+  - name: PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: metrics-app-secret
+        key: PASSWORD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
