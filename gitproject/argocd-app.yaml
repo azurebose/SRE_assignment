@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: metrics-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/azurebose/SRE_assignment.git
+    targetRevision: main
+    path: charts/metrics-app
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+

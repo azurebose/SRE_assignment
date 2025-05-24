@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metrics-app
+spec:
+  template:
+    spec:
+      containers:
+        - name: metrics-app
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          env:
+            - name: PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: myapp-secrets
+                  key: password
+
