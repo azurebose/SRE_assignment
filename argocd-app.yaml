@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/azurebose/SRE_assignment.git
     targetRevision: HEAD
-    path: charts/metrics-app
+    path: metrics-app
     helm:
       valueFiles:
         - values.yaml
